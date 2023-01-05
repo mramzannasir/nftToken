@@ -33,7 +33,7 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="flex justify-center md:justify-start">
-                  <button className="bg-[#F9623B] text-white text-sm font-normal flex items-center gap-1 px-8 py-3 rounded-[50px]">
+                  <button className="bg-[#F9623B] text-white text-sm font-normal flex items-center gap-1 px-6 md:px-8 py-3 rounded-[50px]">
                     <h1>Get Access</h1>
                     <HiArrowSmRight className="text-2xl" />
                   </button>
