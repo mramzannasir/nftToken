@@ -14,7 +14,7 @@ const Home = () => {
           <div className="absolute h-full w-full top-0 left-0">
             <div className="h-full w-full ">
               <div>
-                <h1 className="text-center text-3xl md:text-5xl font-bold mt-6 text-white">
+                <h1 className="text-center text-3xl md:text-5xl font-bold mt-2 md:mt-6 text-white">
                   Logo
                 </h1>
               </div>
