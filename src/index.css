@@ -8,6 +8,9 @@
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
   }
+  html {
+    overflow-x: hidden;
+  }
   .bg-img {
     background-image: url("../public/Images/2nd-bg.png");
     background-position: center center;
