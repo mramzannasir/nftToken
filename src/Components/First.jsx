@@ -12,7 +12,7 @@ const First = () => {
   return (
     <div>
       <main className="static">
-        <section className="w-full first-bg pt-3 md:pt-8 pb-[10rem]">
+        <section className="w-full first-bg pt-3 md:pt-8 pb-[5rem] md:pb-[10rem]">
           {/* <div className="absolute top-5 left-2 lg:-top-[16rem] lg:-left-[16rem]">
             <div className="h-[10rem] lg:h-[40rem] lg:w-[40rem] w-[10rem] rounded-full bg-[#122790] opacity-70  blur-[5rem]"></div>
           </div> */}
