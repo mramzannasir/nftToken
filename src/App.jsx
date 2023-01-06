@@ -15,7 +15,10 @@ const App = () => {
       <div>
         <First />
       </div>
-      <div>{/* <Second /> */}</div>
+      <div>
+        {" "}
+        <Second />
+      </div>
     </>
   );
 };

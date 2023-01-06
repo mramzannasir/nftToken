@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HiArrowSmRight } from "react-icons/hi";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const First = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
+
   return (
     <div>
       <main className="static">
@@ -10,13 +18,15 @@ const First = () => {
           </div> */}
           {/* _____________________Design_______________________________________ */}
           <main className="">
-            <div>
-              <div>
+            <div className="pt-10 ">
+              <div data-aos="fade-up">
                 <h1 className="text-2xl font-semibold md:font-bold md:text-[45px] text-center text-white">
                   Supporting Projects On
                 </h1>
               </div>
-              <div className="flex flex-wrap px-4 items-center justify-center gap-4 md:gap-8 xl:gap-10 2xl:gap-14 mt-2 md:mt-7 2xl:mt-9">
+              <div
+                data-aos="fade-up"
+                className="flex mt-8 flex-wrap px-4 items-center justify-center gap-4 md:gap-8 xl:gap-10 2xl:gap-14  md:mt-7 2xl:mt-9">
                 <div>
                   <img
                     src="/Images/ethereum.png"
@@ -52,18 +62,22 @@ const First = () => {
 
               {/*_--------------------------Work_sections---------------------------------------------------------------- */}
               <div className="mt-8 md:mt-16">
-                <div>
+                <div data-aos="fade-up">
                   <h1 className="text-2xl font-semibold md:font-bold md:text-[39px] text-center text-white">
                     How it Works
                   </h1>
                 </div>
                 <div>
-                  <p className="text-sm md:text-lg text-center font-light tracking-wider text-white mt-2  md:mt-2">
+                  <p
+                    data-aos="zoom-out"
+                    className="text-sm md:text-lg text-center font-light tracking-wider text-white mt-2  md:mt-2">
                     100% <b>No Code,</b> ready in minutes
                   </p>
                 </div>
                 {/* Card */}
-                <div className="mt-4 md:mt-6 flex justify-center flex-col items-center">
+                <div
+                  data-aos="zoom-out"
+                  className="mt-4 md:mt-6 flex justify-center flex-col items-center">
                   <div className="w-[300px] md:w-[50%] 2xl:w-[40%] 3xl:w-[40%] 4xl:w-[35%]">
                     <div className="bg-white p-1 ssm:p-4 md:p-4 rounded-md">
                       <div className="flex items-center gap-3">
@@ -145,14 +159,16 @@ const First = () => {
                   </div>
                 </div>
                 {/* Dots */}
-                <div className="w-full flex justify-center items-center gap-2 md:gap-3 mt-6">
+                <div
+                  data-aos="zoom-in"
+                  className="w-full flex justify-center items-center gap-2 md:gap-3 mt-6">
                   <div className="w-4 md:w-6 md:h-2 h-1 bg-[#f9623b] rounded-lg"></div>
                   <div className="w-1 h-1 md:w-2 md:h-2 bg-[#d9d9d9] rounded-lg"></div>
                   <div className="w-1 h-1 md:w-2 md:h-2 bg-[#d9d9d9] rounded-lg"></div>
                   <div className="w-1 h-1 md:w-2 md:h-2 bg-[#d9d9d9] rounded-lg"></div>
                 </div>
 
-                <div>
+                <div data-aos="zoom-out" className="mt-5 md:mt-2 ">
                   <h1 className="text-base font-medium text-white text-center md:mt-2">
                     Mint or Bring Your Own Token
                   </h1>
@@ -171,7 +187,7 @@ const First = () => {
 
                 {/* Token div sols */}
 
-                <div>
+                <div data-aos="fade-up" className="py-8">
                   <div className="mt-5 2xl:mt-7 4xl:mt-9">
                     <h1 className="text-2xl font-semibold md:font-bold md:text-[39px] text-center text-white">
                       Preview Our Token Management Solution
@@ -183,7 +199,9 @@ const First = () => {
                     </p>
                   </div>
                   <div className="flex w-full justify-center items-center mt-2 ">
-                    <button className="bg-[#F9623B] text-white text-sm font-normal flex items-center gap-1 px-6 md:px-8 xl:px-9 4xl:px-10 py-2 rounded-[50px]">
+                    <button
+                      data-aos="zoom-in"
+                      className="bg-[#F9623B] text-white text-sm font-normal flex items-center gap-1 px-6 md:px-8 xl:px-9 4xl:px-10 py-2 rounded-[50px]">
                       <h1>Get Access</h1>
                       <HiArrowSmRight className="text-2xl" />
                     </button>
@@ -197,13 +215,15 @@ const First = () => {
 
                 {/*_______________________________________Smart____________________________________*/}
 
-                <div className="flex justify-center items-center flex-col">
+                <div className="flex justify-center items-center flex-col py-8">
                   <div>
-                    <h1 className="text-2xl font-semibold md:font-bold md:text-[39px] text-center text-white">
+                    <h1
+                      data-aos="zoom-in"
+                      className="text-2xl font-semibold md:font-bold md:text-[39px] text-center text-white">
                       Smart Contract Audited by
                     </h1>
                   </div>
-                  <div className="">
+                  <div data-aos="fade-down" className="">
                     <img
                       src="/Images/smart.png"
                       alt=""
@@ -219,13 +239,15 @@ const First = () => {
                 {/* Crew section_____________________________________________ */}
                 <div className="px-2 md:px-16 lg:px-28 xl:px-44 2xl:px-[18rem]">
                   <div>
-                    <h1 className="text-2xl font-semibold md:font-bold md:text-[39px]  text-white">
+                    <h1
+                      data-aos="fade-right"
+                      className="text-2xl font-semibold md:font-bold md:text-[39px]  text-white">
                       Meet The Crew
                     </h1>
                   </div>
 
-                  <div className="flex flex-wrap items-center justify-around md:justify-between  gap-3 mt-4 md:mt-6 xl:mt-8 ">
-                    <div>
+                  <div className="flex flex-wrap items-center justify-around  gap-3 mt-4 md:mt-6 xl:mt-8 ">
+                    <div data-aos="fade-down">
                       <img
                         src="/Images/Cricle.png"
                         alt=""
@@ -235,12 +257,12 @@ const First = () => {
                         <h1 className="text-sm font-normal text-white text-center">
                           Jack Son
                         </h1>
-                        <p className="text-sm font-extralight text-[#a5a5a5]">
+                        <p className="text-sm text-center font-extralight text-[#a5a5a5]">
                           Commander
                         </p>
                       </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-up">
                       <img
                         src="/Images/Cricle.png"
                         alt=""
@@ -256,7 +278,7 @@ const First = () => {
                       </div>
                     </div>
 
-                    <div>
+                    <div data-aos="fade-down">
                       <img
                         src="/Images/Cricle.png"
                         alt=""
@@ -266,12 +288,12 @@ const First = () => {
                         <h1 className="text-sm font-normal text-white text-center">
                           Mihail
                         </h1>
-                        <p className="text-sm font-extralight text-[#a5a5a5]">
+                        <p className="text-sm text-center font-extralight text-[#a5a5a5]">
                           Commander
                         </p>
                       </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-up">
                       <img
                         src="/Images/Cricle.png"
                         alt=""
@@ -286,17 +308,17 @@ const First = () => {
                         </p>
                       </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-down" className="">
                       <img
                         src="/Images/Cricle.png"
                         alt=""
                         className="h-[5rem] xl:h-[8rem]"
                       />
-                      <div className="mt-1 md:mt-2">
+                      <div className="mt-1 md:mt-2 w-full">
                         <h1 className="text-sm font-normal text-white text-center">
                           Max
                         </h1>
-                        <p className="text-sm font-extralight text-[#a5a5a5]">
+                        <p className="text-sm text-center  font-extralight text-[#a5a5a5]">
                           Commander
                         </p>
                       </div>
@@ -311,5 +333,4 @@ const First = () => {
     </div>
   );
 };
-
 export default First;

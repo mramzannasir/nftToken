@@ -56,4 +56,10 @@
     border-radius: 1px;
     transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
   }
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgb(255, 255, 255);
+
+    font-weight: 400;
+  }
 }

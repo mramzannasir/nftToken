@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HiArrowSmRight } from "react-icons/hi";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
+
   return (
     <div>
       <main>
@@ -18,12 +27,14 @@ const Home = () => {
                   Logo
                 </h1>
               </div>
-              <div className="flex flex-col mt-8 md:mt-28 md:ml-14 2xl:ml-[9rem] 2xl:mt-32 3xl:mt-48 ">
+              <div
+                data-aos="fade-up"
+                className="flex flex-col mt-32 md:mt-28 md:ml-14 2xl:ml-[9rem]  2xl:mt-32 3xl:mt-48 ">
                 <div>
-                  <h1 className="text-4xl text-center md:text-left  font-semibold md:text-5xl 2xl:text-6xl 3xl:text-7xl md:font-bold text-white md:leading-[56px]">
+                  <h1 className="text-3xl text-center md:text-left  font-semibold md:text-5xl 2xl:text-6xl 3xl:text-7xl md:font-bold text-white md:leading-[56px]">
                     No-code token <br /> management tools to
                   </h1>
-                  <h1 className="md:text-5xl text-4xl text-center md:text-left 2xl:text-6xl 3xl:text-7xl mt-1 font-bold text-[#F9623B]">
+                  <h1 className="md:text-4xl text-3xl text-center md:text-left 2xl:text-6xl 3xl:text-7xl mt-1 font-bold text-[#F9623B]">
                     Visualise
                   </h1>
                 </div>
@@ -33,7 +44,9 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="flex justify-center md:justify-start">
-                  <button className="bg-[#F9623B] text-white text-sm font-normal flex items-center gap-1 px-6 md:px-8 py-3 rounded-[50px]">
+                  <button
+                    data-aos="fade-up"
+                    className="bg-[#F9623B] text-white text-sm font-normal flex items-center gap-1 px-6 md:px-8 py-2 md:py-3 rounded-[50px]">
                     <h1>Get Access</h1>
                     <HiArrowSmRight className="text-2xl" />
                   </button>
