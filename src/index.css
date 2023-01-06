@@ -6,6 +6,7 @@
 @layer components {
   body {
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
   }
   .bg-img {
     background-image: url("../public/Images/2nd-bg.png");
