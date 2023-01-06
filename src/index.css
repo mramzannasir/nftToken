@@ -24,4 +24,36 @@
       #122790 100%
     );
   }
+  .first-bg {
+    background-image: url("../public/Images/Final-bg-1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tube-bg {
+    background: linear-gradient(
+      90deg,
+      #f1efef -24.18%,
+      #f9f8f8 50.26%,
+      #e7e5e5 114.84%
+    );
+  }
+  .corner {
+    width: 12px;
+    height: 12px;
+    left: calc(50% - 12px / 2 + 12px);
+    bottom: 5px;
+    background: #b9d9ff;
+    border-radius: 1px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  }
+  .corner-1 {
+    width: 12px;
+    height: 12px;
+    left: calc(50% - 12px / 2 + 12px);
+    bottom: 5px;
+    background: #fff8b9;
+    border-radius: 1px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  }
 }
