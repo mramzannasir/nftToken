@@ -36,7 +36,7 @@ export default function Example() {
             <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
               <div className={`${open === 1 ? "" : ""}`}>
                 <AccordionHeader onClick={() => handleOpen(1)}>
-                  <h1 className="border-none text-base font-medium outline-none">
+                  <h1 className="border-none text-sm text-left font-medium outline-none">
                     {" "}
                     What tokens do you currently support?
                   </h1>
@@ -57,10 +57,9 @@ export default function Example() {
             <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
               <div className={`${open === 2 ? "" : ""}`}>
                 <AccordionHeader onClick={() => handleOpen(2)}>
-                  <h1 className="border-none text-base font-medium outline-none">
+                  <h1 className="border-none text-sm text-left font-medium outline-none">
                     {" "}
-                    Can I create smart contracts for multiple addresses in one
-                    go?
+                    Can I create smart contracts one go?
                   </h1>
                 </AccordionHeader>
                 <AccordionBody>
@@ -79,7 +78,7 @@ export default function Example() {
             <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
               <div className={`${open === 3 ? "" : ""}`}>
                 <AccordionHeader onClick={() => handleOpen(3)}>
-                  <h1 className="border-none text-base font-medium outline-none">
+                  <h1 className="border-none text-sm text-left font-medium outline-none">
                     {" "}
                     Are token distributions fully automated or do I still have
                     to manually approve?
@@ -101,7 +100,7 @@ export default function Example() {
             <Accordion open={open === 4} icon={<Icon id={4} open={open} />}>
               <div className={`${open === 4 ? "" : ""}`}>
                 <AccordionHeader onClick={() => handleOpen(4)}>
-                  <h1 className="border-none text-base font-medium outline-none">
+                  <h1 className="border-none text-sm text-left font-medium outline-none">
                     {" "}
                     Are token distributions fully automated or do I still have
                     to manually approve?
@@ -123,7 +122,7 @@ export default function Example() {
             <Accordion open={open === 5} icon={<Icon id={5} open={open} />}>
               <div className={`${open === 5 ? "" : ""}`}>
                 <AccordionHeader onClick={() => handleOpen(5)}>
-                  <h1 className="border-none text-base font-medium outline-none">
+                  <h1 className="border-none text-sm text-left font-medium outline-none">
                     {" "}
                     Has MUVL replaced 'thebacker' branding?
                   </h1>
@@ -144,7 +143,7 @@ export default function Example() {
             <Accordion open={open === 6} icon={<Icon id={6} open={open} />}>
               <div className={`${open === 6 ? "" : ""}`}>
                 <AccordionHeader onClick={() => handleOpen(6)}>
-                  <h1 className="border-none text-base font-medium outline-none">
+                  <h1 className="border-none text-sm text-left font-medium outline-none">
                     {" "}
                     How much does MUVL cost to use?
                   </h1>
@@ -165,7 +164,7 @@ export default function Example() {
             <Accordion open={open === 7} icon={<Icon id={7} open={open} />}>
               <div className={`${open === 7 ? "" : ""}`}>
                 <AccordionHeader onClick={() => handleOpen(7)}>
-                  <h1 className="border-none text-base font-medium outline-none">
+                  <h1 className="border-none text-sm text-left font-medium outline-none">
                     {" "}
                     Does MUVL take custody of the tokens?
                   </h1>
@@ -186,7 +185,7 @@ export default function Example() {
             <Accordion open={open === 8} icon={<Icon id={8} open={open} />}>
               <div className={`${open === 8 ? "" : ""}`}>
                 <AccordionHeader onClick={() => handleOpen(8)}>
-                  <h1 className="border-none text-base font-medium outline-none">
+                  <h1 className="border-none text-sm text-left font-medium outline-none">
                     {" "}
                     Have you been audited?
                   </h1>
