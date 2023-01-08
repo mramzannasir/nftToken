@@ -111,4 +111,7 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+  svg {
+    display: none !important;
+  }
 }

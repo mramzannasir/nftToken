@@ -5,6 +5,7 @@ import { SlEnvolope } from "react-icons/sl";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BackedSlider from "./BackedSlider";
+import Accordion from "./Accordion";
 
 const Second = () => {
   useEffect(() => {
@@ -29,146 +30,9 @@ const Second = () => {
             className="text-3xl font-medium text-center text-white">
             FAQs
           </h1>
-
-          <div className="flex flex-col w-full justify-center items-center gap-4 mt-8">
-            <div
-              data-aos="fade-up"
-              className="w-full px-2 md:px-0 2xl:w-[65%] md:w-[70%]">
-              <div className="flex md:px-2 items-center justify-between">
-                <div>
-                  {" "}
-                  <h1 className="text-sm md:text-xl font-medium text-white">
-                    What tokens do you currently support?
-                  </h1>
-                </div>
-                <div className="text-xl text-white cursor-pointer">
-                  {" "}
-                  <BsPlusSquareFill />
-                </div>
-              </div>
-              <hr className="mt-2" />
-            </div>
-            <div
-              data-aos="fade-up"
-              className="w-full px-2 md:px-0 2xl:w-[65%] md:w-[70%]">
-              <div className="flex md:px-2 items-center justify-between">
-                <div>
-                  {" "}
-                  <h1 className="text-sm md:text-xl font-medium text-white">
-                    Can I create smart contracts for multiple addresses in one
-                    go?
-                  </h1>
-                </div>
-                <div className="text-xl text-white cursor-pointer">
-                  {" "}
-                  <BsPlusSquareFill />
-                </div>
-              </div>
-              <hr className="mt-2" />
-            </div>
-            <div
-              data-aos="fade-up"
-              className="w-full px-2 md:px-0 2xl:w-[65%] md:w-[70%]">
-              <div className="flex md:px-2 items-center justify-between">
-                <div>
-                  {" "}
-                  <h1 className="text-sm md:text-xl font-medium text-white">
-                    Are token distributions fully automated or do I still have
-                    to manually approve?
-                  </h1>
-                </div>
-                <div className="text-xl text-white cursor-pointer">
-                  {" "}
-                  <BsPlusSquareFill />
-                </div>
-              </div>
-              <hr className="mt-2" />
-            </div>
-            <div
-              data-aos="fade-up"
-              className="w-full px-2 md:px-0 2xl:w-[65%] md:w-[70%]">
-              <div className="flex md:px-2 items-center justify-between">
-                <div>
-                  {" "}
-                  <h1 className="text-sm md:text-xl font-medium text-white">
-                    Has MUVL replaced 'thebacker' branding?
-                  </h1>
-                </div>
-                <div className="text-xl text-white cursor-pointer">
-                  {" "}
-                  <BsPlusSquareFill />
-                </div>
-              </div>
-              <hr className="mt-2" />
-            </div>
-            <div
-              data-aos="fade-up"
-              className="w-full px-2 md:px-0 2xl:w-[65%] md:w-[70%]">
-              <div className="flex md:px-2 items-center justify-between">
-                <div>
-                  {" "}
-                  <h1 className="text-sm md:text-xl font-medium text-white">
-                    How much does MUVL cost to use?
-                  </h1>
-                </div>
-                <div className="text-xl text-white cursor-pointer">
-                  {" "}
-                  <BsPlusSquareFill />
-                </div>
-              </div>
-              <hr className="mt-2" />
-            </div>
-            <div
-              data-aos="fade-up"
-              className="w-full px-2 md:px-0 2xl:w-[65%] md:w-[70%]">
-              <div className="flex md:px-2 items-center justify-between">
-                <div>
-                  {" "}
-                  <h1 className="text-sm md:text-xl font-medium text-white">
-                    Does MUVL take custody of the tokens?
-                  </h1>
-                </div>
-                <div className="text-xl text-white cursor-pointer">
-                  {" "}
-                  <BsPlusSquareFill />
-                </div>
-              </div>
-              <hr className="mt-2" />
-            </div>
-            <div
-              data-aos="fade-up"
-              className="w-full px-2 md:px-0 2xl:w-[65%] md:w-[70%]">
-              <div className="flex md:px-2 items-center justify-between">
-                <div>
-                  {" "}
-                  <h1 className="text-sm md:text-xl font-medium text-white">
-                    What digital wallets are compatible with the MUVL platform?
-                  </h1>
-                </div>
-                <div className="text-xl text-white cursor-pointer">
-                  {" "}
-                  <BsPlusSquareFill />
-                </div>
-              </div>
-              <hr className="mt-2" />
-            </div>
-            <div
-              data-aos="fade-up"
-              className="w-full px-2 md:px-0 2xl:w-[65%] md:w-[70%]">
-              <div className="flex md:px-2 items-center justify-between">
-                <div>
-                  {" "}
-                  <h1 className="text-sm md:text-xl font-medium text-white">
-                    Have you been audited?
-                  </h1>
-                </div>
-                <div className="text-xl text-white cursor-pointer">
-                  {" "}
-                  <BsPlusSquareFill />
-                </div>
-              </div>
-              <hr className="mt-2" />
-            </div>
+          {/* Accordion */}
+          <div>
+            <Accordion />
           </div>
           {/* Line */}
           <div className="px-2 md:px-16 lg:px-28 xl:px-44 2xl:px-[18rem]">
