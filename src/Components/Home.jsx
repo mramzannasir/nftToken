@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { HiArrowSmRight } from "react-icons/hi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Header from "./Header";
 
 const Home = () => {
   useEffect(() => {
@@ -23,9 +24,7 @@ const Home = () => {
           <div className="absolute h-full w-full top-0 left-0">
             <div className="h-full w-full ">
               <div>
-                <h1 className="text-center text-3xl md:text-5xl font-bold mt-2 md:mt-6 text-white">
-                  Logo
-                </h1>
+                <Header />
               </div>
               <div
                 data-aos="fade-up"
@@ -46,7 +45,7 @@ const Home = () => {
                 <div className="flex justify-center md:justify-start">
                   <button
                     data-aos="fade-up"
-                    className="bg-[#F9623B] text-white text-sm font-normal flex items-center gap-1 px-6 md:px-8 py-2 md:py-3 rounded-[50px]">
+                    className="bg-[#F9623B]  text-white text-sm font-normal flex items-center gap-1 px-6 md:px-8 py-2 md:py-3 rounded-[50px]">
                     <h1>Get Access</h1>
                     <HiArrowSmRight className="text-2xl" />
                   </button>

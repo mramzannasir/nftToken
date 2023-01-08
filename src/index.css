@@ -4,6 +4,22 @@
 @tailwind utilities;
 
 @layer components {
+  .sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .header-bg {
+    backdrop-filter: blur(21px);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      linear-gradient(
+        148.05deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+  }
   body {
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
@@ -65,5 +81,34 @@
     color: rgb(255, 255, 255);
 
     font-weight: 400;
+  }
+  .slick-prev {
+    display: none;
+  }
+  .slick-next {
+    display: none;
+  }
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+
+  .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f9623b;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    border-radius: 1rem;
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 }

@@ -4,6 +4,7 @@ import { HiArrowSmRight } from "react-icons/hi";
 import { SlEnvolope } from "react-icons/sl";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BackedSlider from "./BackedSlider";
 
 const Second = () => {
   useEffect(() => {
@@ -17,37 +18,8 @@ const Second = () => {
           <h1 className="text-white text-center text-4xl font-medium ">
             Backed by
           </h1>
-          <div className="flex flex-wrap px-4 items-center justify-center gap-4 md:gap-8 mt-4">
-            <div>
-              <img src="/Images/aava.png" alt="" className="h-4 md:h-6" />
-            </div>
-            <div>
-              <img src="/Images/polygon.png" alt="" className="h-4 md:h-6" />
-            </div>
-            <div>
-              <img
-                src="/Images/Chainalysis.png"
-                alt=""
-                className="h-4 md:h-6"
-              />
-            </div>
-            <div>
-              <img src="/Images/enidc.png" alt="" className="h-4 md:h-6" />
-            </div>
-          </div>
-          <div className="flex flex-wrap px-4 items-center justify-center gap-4 md:gap-8 mt-4">
-            <div>
-              <img src="/Images/Bio-ico.png" alt="" className="h-4 md:h-6" />
-            </div>
-            <div>
-              <img src="/Images/palure.png" alt="" className="h-4 md:h-6" />
-            </div>
-            <div>
-              <img src="/Images/bangoon.png" alt="" className="h-4 md:h-6" />
-            </div>
-            <div>
-              <img src="/Images/spice.png" alt="" className="h-4 md:h-6" />
-            </div>
+          <div className="mt-4">
+            <BackedSlider />
           </div>
         </section>
         {/* Faq Sections */}
