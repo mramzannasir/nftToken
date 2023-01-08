@@ -111,7 +111,8 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  svg {
-    display: none !important;
+  .button__bar li.slick-active button {
+    opacity: 0.75;
+    color: rgb(126, 11, 11);
   }
 }

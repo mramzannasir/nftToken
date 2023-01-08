@@ -28,23 +28,23 @@ const CrewSlick = () => {
       {
         breakpoint: 800,
         settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 4,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
         },
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-      {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -61,9 +61,9 @@ const CrewSlick = () => {
                 <img
                   src={item.image}
                   alt="Image Not showing some thing went wrong"
-                  className="mx-auto"
+                  className="mx-auto h-16 md:h-auto"
                 />
-                <h1 className="text-center mt-1 text-base font-medium text-white">
+                <h1 className="text-center mt-1 text-sm md:text-base font-medium text-white">
                   {item.name}
                 </h1>
                 <p className="text-center font-sm font-extralight text-white opacity-50">

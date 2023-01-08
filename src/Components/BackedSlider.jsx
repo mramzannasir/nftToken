@@ -9,7 +9,7 @@ const BackedSlider = () => {
     dots: false,
     infinite: true,
     speed: 1900,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
