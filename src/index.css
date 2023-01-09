@@ -111,8 +111,29 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  .button__bar li.slick-active button {
-    opacity: 0.75;
-    color: rgb(126, 11, 11);
+
+  /* li .slick-active {
+    background: red;
+    height: 2rem;
+  } */
+  .slick-dots .slick-active {
+    width: 27px;
+    height: 8px;
+    background: #f9623b;
+    border-radius: 8px;
+    color: inherit;
+    transition: all;
+    transition-duration: 300ms;
+  }
+  .slick-dots li button::before {
+    width: 8px;
+    height: 8px;
+    background: #d9d9d9;
+    border-radius: 100%;
+    color: inherit;
+  }
+
+  .slick-dots li.slick-active button:before {
+    display: none;
   }
 }

@@ -49,7 +49,7 @@ const First = () => {
                 <SliderSlick />
                 {/* Dots */}
 
-                <div data-aos="zoom-out" className="mt-5 md:mt-2 ">
+                <div data-aos="zoom-out" className="mt-8 ">
                   <h1 className="text-base font-medium text-white text-center md:mt-2">
                     Mint or Bring Your Own Token
                   </h1>
